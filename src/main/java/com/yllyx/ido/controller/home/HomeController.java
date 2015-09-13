@@ -1,4 +1,4 @@
-package com.yllyx.ido;
+package com.yllyx.ido.controller.home;
 
 import java.text.DateFormat;
 import java.util.Date;
