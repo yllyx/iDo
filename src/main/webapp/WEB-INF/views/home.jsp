@@ -19,38 +19,43 @@
       <link href="<%=basePath%>resources/css/common/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-fixed-top navbar-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <nav class="navbar navbar-fixed-top navbar-dark bg-primary">
         <a class="navbar-brand" href="#">iDo</a>
         <ul class="nav navbar-nav">
-            <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
-          <form class="form-inline navbar-form pull-right">
-            <input class="form-control" type="text" placeholder="Search">
-            <button class="btn btn-success-outline" type="submit">Search</button>
-          </form>
+          <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+        <form class="form-inline navbar-form pull-right">
+          <input class="form-control" type="text" placeholder="Search" />
+          <button class="btn btn-secondary-outline" type="submit">Search</button>
+          <button type="button" class="btn btn-info">登录</button>
+          <button type="button" class="btn btn-info">注册</button>
+        </form>
       </nav>
       
-    </div>
-
-    <div class="content">
-    <h1>content</h1>
-    </div>
+      <div class="pager-prev">
+        <h1>content</h1>
+      </div>
+      
+      
+      <div>
+        <footer class="pager-next">
+        <h1>footer</h1>
+        </footer>
+      </div>
+    </div><!--end container -->
     
-    <footer>
-    <h1>footer</h1>
-    </footer>
   <script type="text/javascript" src="<%=basePath%>resources/js/common/jquery.min.js"></script>
   <script type="text/javascript" src="<%=basePath%>resources/js/common/bootstrap.min.js"></script>
   </body>
