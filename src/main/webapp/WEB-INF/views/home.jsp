@@ -17,10 +17,13 @@
       
       <!-- Loading Bootstrap css -->
       <link href="<%=basePath%>resources/css/common/bootstrap.min.css" rel="stylesheet">
+      
+      <!-- 载入自定义样式 -->
+      <link href="<%=basePath%>resources/css/ido/home.css" rel="stylesheet">
   </head>
   <body>
     <div class="container-fluid">
-      <nav class="navbar navbar-fixed-top navbar-dark bg-primary">
+      <nav class="navbar  navbar-fixed-top navbar-dark bg-primary">
         <a class="navbar-brand" href="#">iDo</a>
         <ul class="nav navbar-nav">
           <li class="nav-item active">
@@ -43,18 +46,17 @@
           <button type="button" class="btn btn-info">注册</button>
         </form>
       </nav>
-      
-      <div class="pager-prev">
-        <h1>content</h1>
-      </div>
-      
-      
-      <div>
-        <footer class="pager-next">
-        <h1>footer</h1>
-        </footer>
-      </div>
     </div><!--end container -->
+    
+    <div class="container-fluid" style="height:500px;background-color:#22BC85;">
+      <h1>content</h1>
+    </div>
+    
+    <div class="container-fluid" style="height:500px;">
+      <footer class="pager-next">
+      <h1>footer</h1>
+      </footer>
+    </div>
     
   <script type="text/javascript" src="<%=basePath%>resources/js/common/jquery.min.js"></script>
   <script type="text/javascript" src="<%=basePath%>resources/js/common/bootstrap.min.js"></script>
