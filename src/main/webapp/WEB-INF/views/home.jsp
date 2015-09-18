@@ -42,13 +42,13 @@
         <form class="form-inline navbar-form pull-right">
           <input class="form-control" type="text" placeholder="Search" />
           <button class="btn btn-secondary-outline" type="submit">Search</button>
-          <button type="button" class="btn btn-info">登录</button>
-          <button type="button" class="btn btn-info">注册</button>
+          <button type="button" class="btn btn-info" id='login'>登录</button>
+          <button type="button" class="btn btn-info" id='signUp'>注册</button>
         </form>
       </nav>
     </div><!--end container -->
     
-    <div class="container-fluid" style="height:500px;background-color:#22BC85;">
+    <div class="container-fluid" style="height:500px;background-color:#22BC85;" id = "content">
       <h1>content</h1>
     </div>
     
@@ -57,9 +57,23 @@
       <h1>footer</h1>
       </footer>
     </div>
+</div>
     
   <script type="text/javascript" src="<%=basePath%>resources/js/common/jquery.min.js"></script>
   <script type="text/javascript" src="<%=basePath%>resources/js/common/bootstrap.min.js"></script>
+  <!-- 公共js载入 -->
+  <script type="text/javascript" src="<%=basePath%>resources/js/ido/components/CIDoString.js"></script>
+  <script type="text/javascript" src="<%=basePath%>resources/js/ido/components/CModalDialog.js"></script>
+  
+  
+  <script type="text/javascript" src="<%=basePath%>resources/js/ido/home/CHome.js"></script>
+  <script type="text/javascript">
+    //初始化js全局变量
+    var ROOT_URL = '<%=basePath%>';
+    window.onload = function(){
+    	var CMgmt = new $.CMgmt();
+    	CMgmt.init();
+    }
+  </script>
   </body>
-
 </html>
