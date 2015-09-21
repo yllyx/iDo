@@ -1,3 +1,134 @@
 body{
 	padding:50px;
 }
+
+.my-login-modal{
+	width:500px;
+}
+
+.auth-modal{
+	max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    /*padding: 40px 5pc;*/
+    text-align: center;
+    color: rgba(0,0,0,.4);
+}
+
+.login-tittle{
+	text-align:center;
+}
+
+.login-btn{
+	margin-top: 33px;
+    background-color: #3b5998;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: none;
+    font-size: 1pc;
+    color: #fff;
+    height: 47px;
+    text-decoration: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    outline: 0;
+    line-height: 46px;
+    display: block;
+}
+
+.tecent-div{
+    font-size: 17px;
+    height: 45px;
+    /*margin-left:150px;
+    margin-top:20px;*/
+    
+}
+
+.tecent-div span{
+	display: inline-block;
+	height:55px;
+	vertical-align: middle;
+}
+
+.tecent{
+    background:url(../../assets/ido/img/social.png) no-repeat;
+    width: 45px;
+    height: 45px;
+    display:inline-block;
+}
+
+.other-social-logins{
+	font-size: 17px;
+    margin-left:154px;
+    margin-top:20px;
+}
+
+.other-social-logins a{
+	width: 45px;
+    height: 45px;
+    float: left;
+    margin: 5px;
+    opacity: 0.6;
+}
+
+.other-social-logins .or-span{
+	float: left;
+    margin-top: 18px;
+} 
+
+.weixin{
+	background:url(../../assets/ido/img/social.png) no-repeat 0 -135px;
+}
+
+.weibo{
+	background:url(../../assets/ido/img/social.png) no-repeat 0 -45px;
+}
+
+.auth-form{
+	margin-top:90px;
+}
+
+.auth-form .inputs{
+	margin-top:10px;
+}
+
+.auth-form input{
+	text-align: center;
+    border-bottom: none;
+}
+
+input[type=text], input[type=password]{
+	color: #3c3c3c;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    font-weight: 500;
+    font-size: 1pc;
+    padding: 11px 18px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+    line-height: normal;
+}
+
+.auth-form .form-submit-btn{
+	background-color: #e5e5e5;
+    border: 1px solid #e6e6e6;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1pc;
+    color: #454545;
+    height: 47px;
+    text-decoration: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    outline: 0;
+}
+
+.auth-info .auth-link{
+	color: #22bc85;
+    cursor: pointer;
+}
+

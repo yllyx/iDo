@@ -17,7 +17,7 @@
 			cHome.init();
 
 		}
-	}
+	};
 
 	$.CHome = function() {
 		var _self = this;
@@ -35,23 +35,29 @@
 		}
 
 		var _loginInit = function() {
+
+			var infoHtml = '<div class="auth-modal">'
+					+ '<div class="tecent-div"><span>使用QQ账号登录</span><a class="tecent" href="#"></a></div>'
+					+ '<div class="other-social-logins">'
+					+ '<span class="or-span">或者</span>'
+					+ '<a class="weixin" href="#"></a>'
+					+ '<a class="weibo" href="#"></a></div>'
+					+ '<form class="auth-form">'
+					+ '<div class="inputs">'
+					+ '<span>或者使用已有账号登录</span>'
+					+ '<input name="email" type="text" placeholder="邮箱或者账号">'
+					+ '<input name="password" type="password" placeholder="Password">'
+					+ '<input class="form-submit-btn" type="submit" value="Log in">'
+					+ '</div>' + '</form>' + '<div class="auth-info"><span>'
+					+ '<span>如果您还没有账号, </span>' + '<span>请点击</span>'
+					+ '<span class="auth-link">注册</span></span></div></div>';
+
 			$("#login").click(function() {
 				//1.setting
 				var setting = {
-					tittle : "登录",
-					info : '<h1 style="height:1000px;">hello</h1>',
-					OK : {
-						name : '确定',
-						func : function() {
-							alert("确定按钮回调");
-						}
-					},
-					NO : {
-						name : '取消',
-						func : function() {
-							alert("取消按钮回调");
-						}
-					},
+					tittle : '<div class="login-tittle">登录</div> ',
+					info : infoHtml,
+					modalClass : "my-login-modal",
 				};
 				cModalDialog.init(setting);
 			});
@@ -60,5 +66,5 @@
 		var _signUpInit = function() {
 
 		}
-	}
+	};
 })(jQuery);
