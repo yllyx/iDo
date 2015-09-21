@@ -3,7 +3,7 @@ body{
 }
 
 .my-login-modal{
-	width:500px;
+	width:450px;
 }
 
 .auth-modal{
@@ -62,7 +62,7 @@ body{
 .other-social-logins{
 	font-size: 17px;
     margin-left:154px;
-    margin-top:20px;
+    margin-top:15px;
 }
 
 .other-social-logins a{
