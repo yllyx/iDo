@@ -12,6 +12,8 @@
       <meta name="description" content="一款互联网+教育平台，用户可以在平台自由学习测试和分享">
       <meta name="keywords" content="iDo, IDo, 互联网教育,互联网+教育,智能教育,社交教育">
       <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+      <!-- 用于验证qq互联 -->
+      <meta property="qc:admins" content="25147737126147451261676375" />
       <title>iDo Home</title>
       <link rel="shortcut icon" href="<%=basePath%>resources/assets/ido/img/iDoFavicon.png">
       
