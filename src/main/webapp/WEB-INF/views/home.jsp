@@ -63,6 +63,9 @@
     
   <script type="text/javascript" src="<%=basePath%>resources/js/common/jquery.min.js"></script>
   <script type="text/javascript" src="<%=basePath%>resources/js/common/bootstrap.min.js"></script>
+  
+  <!-- 引入qq互联登录js -->
+  <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101249807" data-redirecturi="http://idolearning.com" charset="utf-8"></script>
   <!-- 公共js载入 -->
   <script type="text/javascript" src="<%=basePath%>resources/js/ido/components/CIDoString.js"></script>
   <script type="text/javascript" src="<%=basePath%>resources/js/ido/components/CModalDialog.js"></script>

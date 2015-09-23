@@ -37,20 +37,21 @@
 		var _loginInit = function() {
 
 			var infoHtml = '<div class="auth-modal">'
-					+ '<div class="tecent-div"><span>使用QQ账号登录</span><a class="tecent" href="#"></a></div>'
-					+ '<div class="other-social-logins">'
-					+ '<span class="or-span">或者</span>'
-					+ '<a class="weixin" href="#"></a>'
-					+ '<a class="weibo" href="#"></a></div>'
 					+ '<form class="auth-form">'
 					+ '<div class="inputs">'
-					+ '<span>或者使用已有账号登录</span>'
 					+ '<input name="email" type="text" placeholder="邮箱或者账号">'
 					+ '<input name="password" type="password" placeholder="Password">'
 					+ '<input class="form-submit-btn" type="submit" value="Log in">'
-					+ '</div>' + '</form>' + '<div class="auth-info"><span>'
-					+ '<span>如果您还没有账号, </span>' + '<span>请点击</span>'
-					+ '<span class="auth-link">注册</span></span></div></div>';
+					+ '</div>' + '</form>' 
+					+ '<div class="auth-info"><span>'
+					+ '<span>如果您还没有账号, </span><span>请点击</span>'
+					+ '<span class="auth-link">注册</span></span></div>'
+					+ '<span >或者使用以下账号登录</span>'
+					+ '<div class="other-social-logins">'
+					+ '<span id="qqLoginBtn"></span>'
+					+ '<a class="weixin" href="#" title="使用微信账号登录"></a>'
+					+ '<a class="weibo" href="#" title="使用新浪微博账号登录"></a></div>'
+					+ '</div>';
 
 			$("#login").click(function() {
 				//1.setting
@@ -60,11 +61,18 @@
 					modalClass : "my-login-modal",
 				};
 				cModalDialog.init(setting);
+				_qqLogin();//放置qq登录按钮
 			});
 		}
 
 		var _signUpInit = function() {
 
+		}
+		
+		var _qqLogin = function(){
+			QC.Login({
+			       btnId:"qqLoginBtn"    //插入按钮的节点id
+			});
 		}
 	};
 })(jQuery);

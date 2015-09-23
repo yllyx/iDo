@@ -63,17 +63,23 @@ body{
 	font-size: 17px;
     margin-left:154px;
     margin-top:15px;
+    height:50px;
 }
 
 .other-social-logins a{
 	width: 45px;
     height: 45px;
     float: left;
-    margin: 5px;
+    margin: 10px;
     opacity: 0.6;
 }
 
-.other-social-logins .or-span{
+.other-social-logins span{
+    float: left;
+    margin: 5px;
+}
+
+.or-span{
 	float: left;
     margin-top: 18px;
 } 
@@ -87,7 +93,7 @@ body{
 }
 
 .auth-form{
-	margin-top:90px;
+	margin-top:20px;
 }
 
 .auth-form .inputs{
